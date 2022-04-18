@@ -638,6 +638,17 @@ footer .redes-sociales .github:hover {
     .fa-github:before
     {
 
-        font-size: 85px;
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 675px){
+    .tecnologias .contenedor .contenedor-tecnologias{
+        justify-content: center ;
+    }
+}
+@media screen and (max-width: 887px){
+    .tecnologias .contenedor .contenedor-tecnologias{
+        justify-content: space-evenly ;
     }
 }
