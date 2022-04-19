@@ -11,10 +11,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 
-    /* background: #000 url(imagenes/5.0.jpg); */
-    /* background-size: cover;
-    background-attachment: fixed; */
+  
 
+}
+.disclaimer{
+    display:none;
 }
 
 .contenedor {
@@ -80,6 +81,10 @@ header .contenedor-logo {
     display: flex;
 }
 
+header .contenedor-logo .fotoliz {
+    margin-bottom :-60px;
+}
+
 header .contenedor-logo .texto-nombre {
     text-align: center;
     border: 3px solid rgba(255, 255, 255, 1);
@@ -87,8 +92,9 @@ header .contenedor-logo .texto-nombre {
     text-align: center;
     display: inline-block;
     padding: 10px 20px;
-    margin: auto;
+  margin: auto 100px 15px;
     height: 130px;
+     
 
 
 }
@@ -111,9 +117,10 @@ header .contenedor-logo .texto-nombre .profesion {
 
 
 header .contenedor-logo .foto .fotoliz img {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
+    vertical-align: top;
 
 }
 
@@ -145,10 +152,13 @@ header .contenedor-fotoliz .foto {
 
 }
 
-header .contenedor,
-.main .contenedor {
+header .contenedor{
     overflow: visible;
+}
+.main .contenedor {
+    
     overflow: hidden;
+  
 }
 
 header .contenedor .contenedor-fotoliz .foto img {
@@ -298,7 +308,7 @@ header .contenedor .contenedor-fotoliz .foto img {
 }
 
 .tecnologias .iconos {
-    width: 140px;
+    width: 150px;
     height: 140px;
     /*  background: #f79256; */
     text-align: center;
@@ -306,6 +316,12 @@ header .contenedor .contenedor-fotoliz .foto img {
     padding: 10px;
 
 
+}
+
+.tecnologias .iconos .tipo{
+    color: #234E92;
+    font-size: 1.12em;
+    font-weight: 600;
 }
 
 .main .tecnologias .calificacion {
@@ -419,11 +435,7 @@ footer .titulo {
 
 
 footer .formulario {
-    /*     background: #CF649A; */
-    /* max-width: 1000px;
-    width: 100%; */
-    /*  height: 350px; */
-    /* margin: 0 auto; */
+    
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: row; */
@@ -528,11 +540,11 @@ footer .redes-sociales .github:hover {
 
 
 
-
 @media screen and (max-width: 920px) {
 
     .contenedor .menu {
         text-align: center;
+        font-size: 10px;
     }
 
     header {
@@ -586,9 +598,7 @@ footer .redes-sociales .github:hover {
         width: 46%;
     }
 
-    /*  header .contenedor-logo .foto .fotoliz{
-        
-    } */
+
 }
 
 @media screen and (max-width: 527px) {
@@ -602,43 +612,73 @@ footer .redes-sociales .github:hover {
         margin-top: 350px;
     }
 
+    .main .texto .bienvenido{
+        font-size: 2em;
+    }
+
+    .main .texto .mas,
+    .main .texto .parrafo{
+        font-size: 1em;
+    }
+
 }
 
 @media screen and (max-width: 687px) {
-    header .contenedor-logo .foto .fotoliz img {
-        width: 300px;
+
+    header{
         height: 300px;
+    }
+    header .contenedor-logo .foto .fotoliz img {
+        width: 200px;
+        height: 200px;
     }
 
     header .contenedor-logo .foto .fotoliz {
-        margin: 100px 0 0;
+        margin: 10px 0 0;
     }
 
     header .contenedor-logo .texto-nombre .titulo {
-        font-size: 2em;
-
+        font-size: 1.8em;
+        line-height: 40px;
     }
 
     header .contenedor-logo .texto-nombre .profesion {
 
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     header .contenedor-logo .texto-nombre {
-
-        height: 130px;
+        border: 2px solid rgba(255, 255, 255, 1);
+        height: 90px;
         padding: 5px 10px;
     }
 
     .main .texto .titulo {
-        margin-top: 350px;
+        margin-top: 250px;
     }
+    
     .fa-instagram:before,
     .fa-linkedin:before,
     .fa-github:before
     {
 
         font-size: 75px;
+    }
+    footer .contacto .formulario .boton{
+        font-size: 25px;
+    }
+    .main .texto .titulo,
+    .proyectos .titulo,
+    footer .titulo,
+    .tecnologias .titulo{
+        font-size: 1.8em;
+    }
+    .main .texto .mas,
+    .main .texto .parrafo{
+        font-size: 1em;
+    }
+    .main .proyectos .contenedor-proyectos .proyecto .descripcion .nombre{
+        font-size: 1em;
     }
 }
 
@@ -652,3 +692,4 @@ footer .redes-sociales .github:hover {
         justify-content: space-evenly ;
     }
 }
+
