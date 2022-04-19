@@ -14,9 +14,6 @@ body {
   
 
 }
-.disclaimer{
-    display:none;
-}
 
 .contenedor {
     width: 90%;
@@ -79,10 +76,7 @@ header .menu .blanco {
 
 header .contenedor-logo {
     display: flex;
-}
-
-header .contenedor-logo .fotoliz {
-    margin-bottom :-60px;
+    margin-top: 150px;
 }
 
 header .contenedor-logo .texto-nombre {
@@ -92,9 +86,8 @@ header .contenedor-logo .texto-nombre {
     text-align: center;
     display: inline-block;
     padding: 10px 20px;
-  margin: auto 100px 15px;
+    margin: auto;
     height: 130px;
-     
 
 
 }
@@ -120,7 +113,6 @@ header .contenedor-logo .foto .fotoliz img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    vertical-align: top;
 
 }
 
@@ -152,13 +144,10 @@ header .contenedor-fotoliz .foto {
 
 }
 
-header .contenedor{
-    overflow: visible;
-}
+header .contenedor,
 .main .contenedor {
-    
+    overflow: visible;
     overflow: hidden;
-  
 }
 
 header .contenedor .contenedor-fotoliz .foto img {
@@ -317,7 +306,6 @@ header .contenedor .contenedor-fotoliz .foto img {
 
 
 }
-
 .tecnologias .iconos .tipo{
     color: #234E92;
     font-size: 1.12em;
@@ -692,4 +680,3 @@ footer .redes-sociales .github:hover {
         justify-content: space-evenly ;
     }
 }
-
